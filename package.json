@@ -16,11 +16,19 @@
     "spec",
     "tap"
   ],
-  "author": {
-    "name": "Eric Baer",
-    "email": "me@ericbaer.com",
-    "url": "https://github.com/baer"
+  "author"  : {
+    "name"  : "Eric Baer",
+    "email" : "me@ericbaer.com",
+    "url"   : "https://github.com/baer"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baer/gulp-nodeunit-runner"
+  },
+  "bugs": {
+    "url": "https://github.com/baer/gulp-nodeunit-runner/issues"
+  },
+  "homepage": "https://github.com/baer/gulp-nodeunit-runner",
   "scripts": {
     "test": "mocha"
   },
@@ -31,9 +39,6 @@
     "through2": "0.4.1",
     "gulp-util": "2.2.14",
     "nodeunit": "~0.8.6"
-  },
-  "devDependencies": {
-    "mocha": "*"
   },
   "engines": {
     "node": ">=0.10.0"
