@@ -1,16 +1,14 @@
-var through = require("through2")
-  , gutil = require("gulp-util")
+var through = require('through2')
+  , gutil = require('gulp-util')
   , path = require('path')
   , fs = require('fs')
-  , nodeunit = require('nodeunit')
-  , through2 = require('through2');
+  , nodeunit = require('nodeunit');
 
 module.exports = function (options) {
-  "use strict";
+  'use strict';
 
   options = options || {};
   options.reporter = options.reporter || 'default';
-  options.reporterOutput = options.reporterOutput || false;
 
   // Check for the nodeunit reporter
   if (!nodeunit.reporters[options.reporter]) {
@@ -40,8 +38,8 @@ module.exports = function (options) {
     }
 
     if (file.isStream()) {
-      this.emit("error",
-        new gutil.PluginError("gulp-nodeunit-runner", "Stream content is not supported"));
+      this.emit('error',
+        new gutil.PluginError('gulp-nodeunit-runner', 'Stream content is not supported'));
       return callback();
     }
 
@@ -59,5 +57,5 @@ module.exports = function (options) {
       callback(err);
     });
 
-  });  
+  });
 };

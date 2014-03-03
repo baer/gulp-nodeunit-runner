@@ -1,4 +1,25 @@
+# --------------------
+# OSX Files
+# --------------------
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# IntelliJ Files
+# --------------------
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# --------------------
+# Plugin Files
+# --------------------
 node_modules/
 temp/
 coverage

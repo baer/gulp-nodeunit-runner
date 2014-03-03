@@ -1,5 +1,3 @@
-(PLUGIN AUTHOR: Please read [Plugin README conventions](https://github.com/wearefractal/gulp/wiki/Plugin-README-Conventions), then delete this line)
-
 # gulp-nodeunit-runner
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
 
@@ -19,22 +17,24 @@ Then, add it to your `gulpfile.js`:
 var nodeunit-runner = require("gulp-nodeunit-runner");
 
 gulp.src("./src/*.ext")
-	.pipe(nodeunit-runner({
-		msg: "Hello Gulp!"
-	}))
-	.pipe(gulp.dest("./dist"));
+	.pipe(nodeunit-runner());
 ```
 
 ## API
 
 ### nodeunit-runner(options)
 
-#### options.msg
+#### options.reporter
 Type: `String`  
-Default: `Hello World`
+Default: `default`
 
-The message you wish to attach to file.
+The nodeunit reporter to use. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
 
+#### options.reporterOptions
+Type: `Object`
+Default: reporter defaults
+
+Nodeunit provides a set of callbacks that will be executed during test execution. These are used by the reporter but can be overridden using this option. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
 
 ## License
 
