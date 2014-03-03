@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/baer/gulp-nodeunit-runner",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test/main.js"
   },
   "files": [
     "index.js"
@@ -39,6 +39,9 @@
     "through2": "0.4.1",
     "gulp-util": "2.2.14",
     "nodeunit": "~0.8.6"
+  },
+  "devDependencies": {
+    "mocha": "1.17.1"
   },
   "engines": {
     "node": ">=0.10.0"

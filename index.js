@@ -44,7 +44,7 @@ module.exports = function (options) {
     }
 
     if (file.isBuffer()) {
-      delete require.cache[require.resolve(path.resolve(file.path))];
+//      delete require.cache[require.resolve(path.resolve(file.path))];
       specs.push(file.path);
 
       this.push(file);
