@@ -16,11 +16,7 @@
     "spec",
     "tap"
   ],
-  "author"  : {
-    "name"  : "Eric Baer",
-    "email" : "me@ericbaer.com",
-    "url"   : "https://github.com/baer"
-  },
+  "author": "Eric Baer <me@ericbaer.com> (https://github.com/baer)",
   "repository": {
     "type": "git",
     "url": "https://github.com/baer/gulp-nodeunit-runner"
@@ -42,5 +38,6 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "main": "index.js"
 }
