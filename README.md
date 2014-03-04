@@ -31,7 +31,7 @@ Default: `default`
 The nodeunit reporter to use. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
 
 #### options.reporterOptions
-Type: `Object`
+Type: `Object`  
 Default: reporter defaults
 
 Nodeunit provides a set of callbacks that will be executed during test execution. These are used by the reporter but can be overridden using this option. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
