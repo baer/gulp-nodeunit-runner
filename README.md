@@ -1,5 +1,5 @@
 # gulp-nodeunit-runner
-[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
+[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Build Status][travis-image]][travis-url]
 
 > nodeunit-runner plugin for [gulp](https://github.com/wearefractal/gulp)
 
@@ -42,6 +42,9 @@ Nodeunit provides a set of callbacks that will be executed during test execution
 
 [npm-url]: https://npmjs.org/package/gulp-nodeunit-runner
 [npm-image]: https://badge.fury.io/js/gulp-nodeunit-runner.png
+
+[travis-url]: http://travis-ci.org/baer/gulp-nodeunit-runner
+[travis-image]: https://secure.travis-ci.org/baer/gulp-nodeunit-runner.png?branch=master
 
 [depstat-url]: https://david-dm.org/baer/gulp-nodeunit-runner
 [depstat-image]: https://david-dm.org/baer/gulp-nodeunit-runner.png
