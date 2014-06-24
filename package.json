@@ -1,6 +1,6 @@
 {
   "name": "gulp-nodeunit-runner",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A nodeunit test runner plugin for Gulp",
   "license": "MIT",
   "keywords": [
