@@ -1,7 +1,17 @@
-# gulp-nodeunit-runner
-[![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Build Status][travis-image]][travis-url]
+<h1 align="center">gulp-nodeunit-runner</h1>
 
-> nodeunit-runner plugin for [gulp](https://github.com/wearefractal/gulp)
+<p align="center">
+  <a title='Build Status' href="https://npmjs.org/package/gulp-nodeunit-runner">
+    <img src='http://img.shields.io/npm/v/gulp-nodeunit-runner.svg' />
+  </a>
+  <a href='https://david-dm.org/baer/gulp-nodeunit-runner'>
+    <img src='https://david-dm.org/baer/gulp-nodeunit-runner.svg' alt='Chat' />
+  </a>
+</p>
+
+<h4 align="center">
+  nodeunit-runner plugin for [gulp](https://github.com/wearefractal/gulp)
+</h4>
 
 ## Usage
 
@@ -39,12 +49,3 @@ Nodeunit provides a set of callbacks that will be executed during test execution
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
-
-[npm-url]: https://npmjs.org/package/gulp-nodeunit-runner
-[npm-image]: https://badge.fury.io/js/gulp-nodeunit-runner.png
-
-[travis-url]: http://travis-ci.org/baer/gulp-nodeunit-runner
-[travis-image]: https://secure.travis-ci.org/baer/gulp-nodeunit-runner.png?branch=master
-
-[depstat-url]: https://david-dm.org/baer/gulp-nodeunit-runner
-[depstat-image]: https://david-dm.org/baer/gulp-nodeunit-runner.png
