@@ -10,15 +10,31 @@ Icon
 .Trashes
 
 # --------------------
+# Sublime Text Files
+# --------------------
+*.sublime-project
+*.sublime-workspace
+
+# --------------------
 # IntelliJ Files
 # --------------------
 *.iml
 *.ipr
 *.iws
 .idea/
+out/
 
 # --------------------
-# Plugin Files
+# Eclipse Files
+# --------------------
+.project
+.metadata
+*.bak
+.classpath
+.settings/
+
+# --------------------
+# App Files
 # --------------------
 node_modules/
 temp/
