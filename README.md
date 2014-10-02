@@ -10,7 +10,7 @@
 </p>
 
 <h4 align="center">
-  nodeunit-runner plugin for [gulp](https://github.com/wearefractal/gulp)
+  nodeunit-runner plugin for <a href='http://gulpjs.com/'>gulp</a>
 </h4>
 
 ## Usage
