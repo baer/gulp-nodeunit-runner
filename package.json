@@ -1,8 +1,43 @@
 {
-  "name": "gulp-nodeunit-runner",
-  "version": "0.2.2",
-  "description": "A nodeunit test runner plugin for Gulp",
-  "license": "MIT",
+  "name"            : "gulp-nodeunit-runner",
+  "description"     : "A nodeunit test runner plugin for Gulp",
+
+  "version"         : "0.2.2",
+  "author"          : "Eric Baer <me@ericbaer.com>",
+
+  "homepage"        : "https://github.com/baer/gulp-nodeunit-runner",
+  "bugs": {
+    "url": "https://github.com/baer/gulp-nodeunit-runner/issues"
+  },
+
+  "repository"      : "git://github.com/baer/gulp-nodeunit-runner.git",
+  "private"         : false,
+
+  "dependencies": {
+    "through2"               : "0.6.2",
+    "gulp-util"              : "3.0.1",
+    "nodeunit"               : ">=0.8.6"
+  },
+  "devDependencies": {
+    "mocha"                  : "1.21.4",
+    "should"                 : "4.0.4"
+  },
+
+  "main" : "./index.js",
+  "files": [
+    "index.js"
+  ],
+
+  "scripts": {
+    "test": "mocha ./test/main.js"
+  },
+
+  "engines":{
+    "node": ">= 0.10.0"
+  },
+
+  "license"         : "MIT",
+
   "keywords": [
     "gulpplugin",
     "nodeunit",
@@ -15,33 +50,5 @@
     "bdd",
     "spec",
     "tap"
-  ],
-  "author": "Eric Baer <me@ericbaer.com> (https://github.com/baer)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/baer/gulp-nodeunit-runner"
-  },
-  "bugs": {
-    "url": "https://github.com/baer/gulp-nodeunit-runner/issues"
-  },
-  "homepage": "https://github.com/baer/gulp-nodeunit-runner",
-  "scripts": {
-    "test": "mocha ./test/main.js"
-  },
-  "files": [
-    "index.js"
-  ],
-  "dependencies": {
-    "through2": "0.6.2",
-    "gulp-util": "3.0.1",
-    "nodeunit": ">=0.8.6"
-  },
-  "devDependencies": {
-    "mocha": "1.21.4",
-    "should": "4.0.4"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "main": "index.js"
+  ]
 }
