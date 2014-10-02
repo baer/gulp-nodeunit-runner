@@ -14,24 +14,24 @@ npm install --save-dev gulp-nodeunit-runner
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var nodeunit-runner = require("gulp-nodeunit-runner");
+var nodeunitRunner = require("gulp-nodeunit-runner");
 
 gulp.src("./src/*.ext")
-	.pipe(nodeunit-runner());
+	.pipe(nodeunitRunner());
 ```
 
 ## API
 
-### nodeunit-runner(options)
+### nodeunitRunner(options)
 
 #### options.reporter
-Type: `String`  
+Type: `String`
 Default: `default`
 
 The nodeunit reporter to use. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
 
 #### options.reporterOptions
-Type: `Object`  
+Type: `Object`
 Default: reporter defaults
 
 Nodeunit provides a set of callbacks that will be executed during test execution. These are used by the reporter but can be overridden using this option. See [nodeunit](https://github.com/caolan/nodeunit) documentation for a complete list.
