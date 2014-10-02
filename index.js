@@ -1,11 +1,12 @@
-var through = require('through2')
-  , gutil = require('gulp-util')
-  , path = require('path')
-  , fs = require('fs')
-  , nodeunit = require('nodeunit');
+'use strict';
+
+var through = require('through2');
+var gutil = require('gulp-util');
+var path = require('path');
+var fs = require('fs');
+var nodeunit = require('nodeunit');
 
 module.exports = function (options) {
-  'use strict';
 
   options = options || {};
   options.reporter = options.reporter || 'default';
@@ -54,6 +55,5 @@ module.exports = function (options) {
     nodeunit.reporters[options.reporter].run(specs, options.reporterOptions, function(err) {
       callback(err);
     });
-
   });
 };

@@ -1,8 +1,10 @@
-var nodeunit = require('../')
-  , should = require('should')
-  , gutil = require('gulp-util')
-  , File = require('gulp-util').File
-  , path = require('path');
+'use strict';
+
+var nodeunit = require('../');
+var should = require('should');
+var gutil = require('gulp-util');
+var File = require('gulp-util').File;
+var path = require('path');
 
 require('mocha');
 
@@ -12,10 +14,10 @@ describe('gulp-nodeunit-runner', function() {
       var stream = nodeunit();
 
       var fakeFile = new File({
-        cwd: "/home/contra/",
-        base: "/home/contra/test",
-        path: "/home/contra/test/test.js",
-        contents: new Buffer("Hello")
+        cwd: '/home/contra/',
+        base: '/home/contra/test',
+        path: '/home/contra/test/test.js',
+        contents: new Buffer('Hello')
       });
 
       stream.on('data', function(newFile){
@@ -25,11 +27,11 @@ describe('gulp-nodeunit-runner', function() {
         should.exist(newFile.contents);
 
         var newFilePath = path.resolve(newFile.path);
-        var expectedFilePath = path.resolve("/home/contra/test/test.js");
+        var expectedFilePath = path.resolve('/home/contra/test/test.js');
         newFilePath.should.equal(expectedFilePath);
 
-        newFile.relative.should.equal("test.js");
-        String(newFile.contents).should.equal("Hello");
+        newFile.relative.should.equal('test.js');
+        String(newFile.contents).should.equal('Hello');
         Buffer.isBuffer(newFile.contents).should.equal(true);
         done();
       });
